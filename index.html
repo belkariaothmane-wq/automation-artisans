@@ -934,6 +934,89 @@
     padding-top: 135px;
   }
 }
+    .audit-offer{
+  margin-top:28px;
+
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+
+  padding:18px 20px;
+
+  max-width:520px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(251,146,60,0.10),
+      rgba(251,146,60,0.04)
+    );
+
+  border:1px solid rgba(251,146,60,0.22);
+
+  border-radius:18px;
+
+  backdrop-filter:blur(12px);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.25),
+    0 0 30px rgba(251,146,60,0.08);
+}
+
+.audit-icon{
+  width:52px;
+  height:52px;
+
+  flex-shrink:0;
+
+  border-radius:14px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:1.5rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(251,146,60,0.25),
+      rgba(251,146,60,0.12)
+    );
+
+  border:1px solid rgba(251,146,60,0.25);
+}
+
+.audit-title{
+  font-size:1rem;
+  font-weight:700;
+  color:#fff;
+  margin-bottom:6px;
+}
+
+.audit-text{
+  font-size:0.9rem;
+  line-height:1.7;
+  color:var(--text-secondary);
+}
+
+@media (max-width:600px){
+
+  .audit-offer{
+    margin-top:22px;
+    padding:16px;
+    gap:14px;
+  }
+
+  .audit-title{
+    font-size:0.95rem;
+  }
+
+  .audit-text{
+    font-size:0.84rem;
+  }
+
+}
   </style>
 </head>
 <body>
@@ -990,14 +1073,29 @@
         </div>
       </div>
       <div class="hero-buttons">
-        <a href="#contact" class="btn-primary">
-          💬 Discuter de votre activité
-        </a>
-        <a href="#services" class="btn-secondary">
-          Voir les automatisations →
-        </a>
-      </div>
+  <a href="#contact" class="btn-primary">
+    💬 Discuter de votre activité
+  </a>
+
+  <a href="#services" class="btn-secondary">
+    Voir les automatisations →
+  </a>
+</div>
+
+<div class="audit-offer">
+  <div class="audit-icon">🎁</div>
+
+  <div class="audit-content">
+    <div class="audit-title">
+      Audit gratuit de votre activité
     </div>
+
+    <div class="audit-text">
+      On identifie ensemble les tâches répétitives
+      qui peuvent être automatisées pour vous faire gagner du temps.
+    </div>
+  </div>
+</div>
 
     <!-- Right: Visual -->
     <div class="hero-visual">
