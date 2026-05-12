@@ -264,16 +264,26 @@
       background: linear-gradient(90deg, transparent, rgba(251,146,60,0.4), transparent);
       height: 1px; width: 120px;
     }
-    .floating-card {
+.floating-card {
       position: absolute;
-      background: rgba(22,26,34,0.9);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--border);
+
+      background: rgba(15,18,26,0.42);
+
+      backdrop-filter: blur(14px);
+
+      border: 1px solid rgba(255,255,255,0.08);
+
       border-radius: var(--radius);
+
       padding: 14px 18px;
+
       font-size: 0.8rem;
+
       animation: float 4s ease-in-out infinite;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+      box-shadow:
+        0 8px 32px rgba(0,0,0,0.35),
+        0 0 24px rgba(251,146,60,0.04);
     }
     .floating-card .fc-header {
       display: flex; align-items: center; gap: 8px;
