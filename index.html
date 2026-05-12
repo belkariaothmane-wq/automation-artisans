@@ -259,6 +259,7 @@
       border-radius: 12px;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.4rem; margin-bottom: 16px;
+      transform: translateY(20px);
     }
     .hero-center-card h3 { font-size: 0.9rem; font-weight: 600; color: var(--white); margin-bottom: 8px; }
     .hero-center-card p { font-size: 0.75rem; color: var(--text-secondary); }
@@ -297,11 +298,36 @@
     .floating-card .fc-time {
       font-size: 0.68rem; color: var(--text-muted); margin-top: 4px;
     }
-    .floating-card.top-left { top: 20px; left: -10px; animation-delay: 0s; }
-.floating-card.top-right { top: 30px; right: -10px; animation-delay: 1s; }
-.floating-card.bottom-left { bottom: 40px; left: -20px; animation-delay: 2s; }
-.floating-card.bottom-right { bottom: 20px; right: -10px; animation-delay: 0.5s; }
-.floating-card.mid-right { top: 50%; right: -30px; transform: translateY(-50%); animation-delay: 1.5s; }
+    .floating-card.top-left {
+  top: 10px;
+  left: 40px;
+  animation-delay: 0s;
+}
+
+.floating-card.top-right {
+  top: 20px;
+  right: 10px;
+  animation-delay: 1s;
+}
+
+.floating-card.bottom-left {
+  bottom: 70px;
+  left: 20px;
+  animation-delay: 2s;
+}
+
+.floating-card.bottom-right {
+  bottom: 50px;
+  right: 30px;
+  animation-delay: 0.5s;
+}
+
+.floating-card.mid-right {
+  top: 52%;
+  right: -5px;
+  transform: translateY(-50%);
+  animation-delay: 1.5s;
+}
     @keyframes float {
       0%,100% { transform: translateY(0); }
       50% { transform: translateY(-8px); }
