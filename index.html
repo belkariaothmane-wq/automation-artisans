@@ -852,18 +852,28 @@
       0% { transform: scale(1); opacity: 0.8; }
       100% { transform: scale(2); opacity: 0; }
     }
+.nav-logo-wrap{
+  width:120px;
+  height:120px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  transform:translateY(6px);
+}
+
 .nav-logo-wrap::before{
   content:'';
   position:absolute;
 
-  width:160px;
-  height:160px;
+  width:150px;
+  height:150px;
   border-radius:50%;
 
   background:
     radial-gradient(circle,
-      rgba(251,146,60,0.28) 0%,
-      rgba(251,146,60,0.10) 35%,
+      rgba(251,146,60,0.22) 0%,
+      rgba(251,146,60,0.08) 40%,
       transparent 72%
     );
 
@@ -876,10 +886,9 @@
   object-fit:contain;
 
   filter:
-    brightness(1.65)
-    contrast(1.45)
-    saturate(1.15)
-    drop-shadow(0 0 18px rgba(251,146,60,0.45));
+    brightness(1.25)
+    contrast(1.2)
+    drop-shadow(0 0 22px rgba(251,146,60,0.45));
 }
   
     /* progress bar in service card */
@@ -906,23 +915,19 @@
   }
 
   .nav-logo {
-    width: 110px;
+    width: 120px;
     height: 76px;
   }
 
   .nav-logo-wrap {
     width: 105px;
     height: 105px;
-    transform: translateY(-8px);
+    transform: translateY(-4px);
   }
 
   .nav-logo-wrap::before {
     width: 120px;
     height: 120px;
-  }
-
-  .hero-bg-logo {
-    display: none;
   }
 
   #hero {
@@ -936,9 +941,11 @@
 <!-- ══════════════════════════════════ NAV ══════════════════════════════════ -->
 <nav id="main-nav">
   <a href="#hero" class="nav-logo">
-  <div class="nav-logo-wrap">
-  </div>
-</a>
+    <div class="nav-logo-wrap">
+      <img src="logo-new.png" alt="Intelligence Artisanale" class="nav-logo-img">
+    </div>
+  </a>
+
   <ul class="nav-links" id="nav-links">
     <li><a href="#problem">Le problème</a></li>
     <li><a href="#services">Services</a></li>
@@ -954,7 +961,6 @@
   <div class="hero-bg"></div>
   <div class="hero-grid-lines"></div>
   <div class="hero-artisans"></div>
-  <img src="logo-new.png" class="hero-bg-logo" alt="Logo Background">
 
   <div class="hero-inner" style="position:relative; z-index:2;">
     <!-- Left: Text -->
