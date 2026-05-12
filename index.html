@@ -298,7 +298,19 @@
     .floating-card.top-right { top: 30px; right: -10px; animation-delay: 1s; }
     .floating-card.bottom-left { bottom: 40px; left: -20px; animation-delay: 2s; }
     .floating-card.bottom-right { bottom: 20px; right: -10px; animation-delay: 0.5s; }
-    .floating-card.mid-right { top: 50%; right: -30px; transform: translateY(-50%); animation-delay: 1.5s; }
+    .floating-card.mid-right {
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  animation-delay: 1.5s;
+}
+
+.audit-card{
+  bottom:-20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:420px;
+}
     @keyframes float {
       0%,100% { transform: translateY(0); }
       50% { transform: translateY(-8px); }
